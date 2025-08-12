@@ -33,11 +33,11 @@ const TodoForm = ({ todoToEdit }) => {
                 type="text"
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
-                className="border p-2 w-full text-xl"
+                className="border rounded p-2 w-full text-xl"
                 placeholder={isEditMode ? "Update Todo" : "Add Todo"}
             />
 
-            <button type="submit"  className="border p-4 ml-2 bg-purple-500 text-slate-500">
+            <button type="submit"  className="border rounded p-4 ml-2 bg-blue-400 text-slate-500">
                 {isEditMode ? <GrPowerReset size={30} /> : <AiOutlinePlus size={30} />}
             </button>
         </form>
